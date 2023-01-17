@@ -66,11 +66,6 @@
       <div class="CV-lado-A__container" id="CV-lado-A__container">
         <img class="CV-lado-A__image" src="../img/Foto F. Planisi.jpg">
         <img class="CV-lado-A__image2" src="https://thumbs.dreamstime.com/b/clip-de-papel-met%C3%A1lico-realista-aislado-sobre-fondo-transparente-portafolio-encuadernador-ilustraci%C3%B3n-del-vector-165330248.jpg">
-        <!-- <div class="CV-lado-A__signature-container">
-          <h5> Franco Planisi M.D</h5>
-          <h5> U.B.A</h5>
-          <h5> MN: 176.282</h5>
-        </div> -->
         <div class="CV-lado-A__header"><br>
           <h5> Dr. Franco Planisi </h5>
           <h5> Médico UBA</h5>
@@ -90,9 +85,21 @@
           <p><b>2013-2019</b><br> Título: Médico. Promedio general: 9.1 <br>
             <span style="font-style: italic"> - Facultad de Medicina, UBA - </span> </p>
         </div>
-        <div class="CV-lado-A__footer">
-          <br><br><span class= "CV-lado-A__footer-date">__________________ <br> fecha </span>
-          <span class="CV-lado-A__footer-signature">__________________<br> firma y sello </span>
+        <div class="CV-lado-A__footer">   
+          <br class="space"><br class="space">
+          <span class= "CV-lado-A__footer-date">
+            <input type="button" class="btn btn-d" value="click to set date" onclick="startTime()">
+            <span id="date"></span>
+            <br>__________________ 
+            <br> fecha </span>
+          <span class="CV-lado-A__footer-signature">
+            <input type="button" class="btn btn-s" value="click to sign" onclick="sign()">
+            <span id="signature"> 
+              <h5> Dr. Franco Planisi </h5>
+              <h5> U.B.A</h5>
+              <h5> MN: 176.282</h5></span>
+              <br>__________________
+              <br> firma </span>
         </div>
       </div>
       <!-- Lado B -->
@@ -153,12 +160,12 @@
             <p class="CV-lado-B__main-subtitle">   
                   [ curso : "Programacion Web Full Stack", <br>
                   año : 2022-2023, <br>  
-                  intitución : "DigitalHouse", <br>
+                  institución : "DigitalHouse", <br>
                   finalizado: <span style="color: green">true </span><br>
                 ] }
                   </p> <br>
-          <br><p class="CV-lado-B__main-text">console.log(<a href="#">"proyectos"</a>)</p>
-          </p> 
+          <br><p class="CV-lado-B__main-text">console.log(<span class="console" onclick="consoleLog()">"proyectos"</span>)</p>
+        </p> 
         </div>
         <div class="CV-lado-B__footer">
           <p class="CV-lado-B__footer-title"> misProyectos : { </p>

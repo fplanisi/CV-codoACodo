@@ -19,7 +19,7 @@
       <div class="header__container-desktop">
         <ul class="list-desktop">
           <li> ● </li>
-          <a href="#about__container"><li class="item-desktop">About Me</li></a>
+          <a href="#about__container"><li class="item-desktop" onclick="hide-list" >About Me</li></a>
           <li> - </li>
           <a href="#CV-lado-A__container"><li class="item-desktop">Resume side A</li></a>
           <li> - </li>
@@ -57,7 +57,7 @@
       <h3> M.D taking the software path </h3> 
       <div class="about__text"> 
         <p class="about__text-en"> I like to define myself as a lifelong learner, always trying to be informed and capacitated with the newest topics, technologies and knowledges.</p>
-        <p class="about__text-en"> I was an M.D and decided to start a career in software engineer.</p>
+        <p class="about__text-en"> I was a M.D and decided to start a career in software engineer.</p>
         <p class="about__text-en"> In the software's world I am free to let my creativity and imagination fly.<br>
       </div>
     </div>
@@ -67,11 +67,6 @@
       <div class="CV-lado-A__container" id="CV-lado-A__container">
         <img class="CV-lado-A__image" src="img/Foto F. Planisi.jpg">
         <img class="CV-lado-A__image2" src="https://thumbs.dreamstime.com/b/clip-de-papel-met%C3%A1lico-realista-aislado-sobre-fondo-transparente-portafolio-encuadernador-ilustraci%C3%B3n-del-vector-165330248.jpg">
-        <!-- <div class="CV-lado-A__signature-container">
-          <h5> Franco Planisi M.D</h5>
-          <h5> U.B.A</h5>
-          <h5> MN: 176.282</h5>
-        </div> -->
         <div class="CV-lado-A__header"><br>
           <h5> Franco Planisi M.D</h5>
           <h5> U.B.A</h5>
@@ -91,9 +86,21 @@
           <p><b>2013-2019</b><br> Degree: M.D. Grade Average: 9.1 <br>
             <span style="font-style: italic"> - Medicine University, U.B.A - </span> </p>
         </div>
-        <div class="CV-lado-A__footer">
-          <br><br><span class= "CV-lado-A__footer-date">__________________ <br> date </span>
-          <span class="CV-lado-A__footer-signature">__________________<br> signature </span>
+        <div class="CV-lado-A__footer">   
+          <br class="space"><br class="space">
+          <span class= "CV-lado-A__footer-date">
+            <input type="button" class="btn btn-d" value="click to set date" onclick="startTime()">
+            <span id="date"></span>
+            <br>__________________ 
+            <br> date </span>
+          <span class="CV-lado-A__footer-signature">
+            <input type="button" class="btn btn-s" value="click to sign" onclick="sign()">
+            <span id="signature"> 
+              <h5> Franco Planisi M.D</h5>
+              <h5> U.B.A</h5>
+              <h5> MN: 176.282</h5></span>
+              <br>__________________
+              <br> signature </span>
         </div>
       </div>
       <!-- Lado B -->
@@ -158,7 +165,7 @@
                   finished: <span style="color: green">true </span><br>
                 ] }
                   </p> <br>
-          <br><p class="CV-lado-B__main-text">console.log(<a href="#">"projects"</a>)</p>
+          <br><p class="CV-lado-B__main-text">console.log(<span class="console" onclick="consoleLog()">"projects"</span>)</p>
           </p> 
         </div>
         <div class="CV-lado-B__footer">
@@ -178,7 +185,7 @@
       <div class="Gallery__container" id="Gallery__container">
         <div class=" Gallery__grid-container">
           <img class="Gallery-grid-img1" src="https://img.lovepik.com/free-png/20210919/lovepik-landscape-painting-png-image_400788974_wh1200.png">
-          <img class="Gallery-grid-img2" src="https://i.blogs.es/e32e91/trucos-enfocar-fotografia-paisaje-01/450_1000.webp">
+          <img class="Gallery-grid-img2" id="myImg" src="https://i.blogs.es/e32e91/trucos-enfocar-fotografia-paisaje-01/450_1000.webp">
           <img class="Gallery-grid-img3" src="https://media.istockphoto.com/id/1244372877/es/foto/monta%C3%B1a-glacial-lago-garibaldi-con-agua-turquesa-en-medio-de-bosque-de-con%C3%ADferas-al-atardecer.jpg?s=612x612&w=0&k=20&c=_N4n8jlcvFfPPwYWTozclM7bDuZ0PE8ihtzmAMPU0-w=">
           <img class="Gallery-grid-img4" src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8&w=1000&q=80">
           <img class="Gallery-grid-img5" src="https://thumbs.dreamstime.com/b/imagen-vertical-de-un-camino-con-las-magn%C3%ADficas-monta%C3%B1as-bajo-el-cielo-azul-capturado-en-california-163571053.jpg">
