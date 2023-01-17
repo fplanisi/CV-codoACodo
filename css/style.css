@@ -1,0 +1,390 @@
+* {
+  font-family: 'Roboto', sans-serif;}
+body {
+  background-color: white;}
+/* ESCRITORIO */
+/* header */
+.header__container-responsive {
+  visibility: hidden;}
+.header__container-desktop {
+  float: left;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+  position: fixed; 
+  top: 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.header__container-desktop li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;}
+.header__container-desktop a {
+  text-decoration: none;
+  color: white;
+  padding: 7px 15px;}
+.header__container-desktop a:hover {
+  color:#c1c1c1;}
+/* language */
+.language__en {
+  color: #333}
+.language__es {
+  color: #00a1ff}
+.check {
+  position: relative;
+  width: 25px;}
+.check:before{
+  content: '';
+  position:absolute;
+  width: 25px;
+  height: 12.5px;
+  background: #333;
+  border-radius: 25px;}
+.check:after {
+  content:'';
+  position: absolute;
+  width: 12.5px;
+  height: 12.5px;
+  background: #fff;
+  border-radius: 25px;
+  transition: 0.25s;
+  border: 2px solid #333;
+  box-sizing: border-box;}
+.check:checked:after{
+  left: 12.5px;
+  border:2px solid #00a1ff}
+.check:checked:before {
+  background: #00a1ff;}
+/* About me */
+.about__container {
+  background-color: #c7c7c7;    
+  z-index: -10;
+  color: white;
+  font-size: 16px;
+  padding: 20px;
+  margin-top: -75px}
+.about__container h2, h3 {
+  text-align: center;
+  padding: 2px;}
+.about__text p {
+  text-indent: 20px;
+  line-height: 1.4;
+  text-align: center;}
+/* CV */
+.CV__container { 
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;}
+/* Lado A */
+.CV-lado-A__container {
+  background-color: #fff6ebf1;
+  height: auto;
+  width: 50%;
+  text-align: center;}
+.CV-lado-A__image {
+  position: absolute;
+  top: -0.7%;
+  right: 51%;
+  width: 75px;
+  height: 75px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.CV-lado-A__image2 {
+  position: absolute;
+  top: -2%;
+  right: 50.2%;
+  width: 30px;
+  height: 30px;
+  opacity: 0.8;}
+.CV-lado-A__text {
+  padding: 35px 45px 20px 45px;
+  border-right: solid 1px black;
+  border-top: solid 1px black;
+  margin: 10px 30px 10px 20px;}
+.CV-lado-A__text-header {
+  text-align: left;}
+.CV-lado-A__text-title {
+  font-weight: bold;
+  text-align: left;}
+.CV-lado-A__text p {
+  line-height: 1.5;}
+.CV-lado-A__footer-date {
+  float: left;
+  padding-left: 10%;
+  padding-bottom: 20px;}
+.CV-lado-A__footer-signature {
+  float: right;
+  padding-right: 10%;}
+/* Lado B */
+.CV-lado-B__main {
+  grid-area : main;}
+.CV-lado-B__aside {
+  grid-area : aside;}
+.CV-lado-B__footer {
+  grid-area : footer;}
+.CV-lado-B__container {
+  width: 50%;
+  background-color: rgb(43, 42, 42);
+  color:white;
+  display: grid;
+  text-align: center;
+  grid-template-areas: 
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "footer footer footer"}
+.CV-lado-B__main-title {
+    text-align: left ;
+    padding: 15px 1px 1px 15px;}
+.CV-lado-B__main-subtitle {
+  text-align: left;
+  padding-left: 90px;
+  padding-right: 10px;}
+.CV-lado-B__main-text {
+  text-align: left;
+  padding: 1px 15px 0px 15px;}
+.CV-lado-B__main-text a {
+  color: #4d7dc9;}
+.CV-lado-B__aside {
+  background-color: rgb(27, 27, 27);
+  border-right: solid 2px rgb(81, 81, 81);
+  height: 100%;}  
+.CV-lado-B__aside-box {
+  display: flex;
+  background-color: rgb(128, 128, 128);
+  width: 70%;
+  height: 20px;
+  margin: 0 40px 20px 20px;
+  border-radius: 10px;}
+.CV-lado-B__aside-box p {
+  align-items: center;
+  color:rgb(0, 0, 0);
+  padding: 2px;
+  font-size: 14px ;}
+.CV-lado-B__aside-box i {
+  color:rgb(0, 0, 0)}
+.CV-lado-B__aside-fill {
+  height: 100%;
+  align-items: flex-start;
+  border-radius: 10px;}
+.filler-color1 {
+  background-color: rgb(229, 183, 156);
+  width: 90%;}
+.filler-color2 {
+  background-color: rgb(155, 176, 239);
+  width: 100%;}
+.filler-color3 {
+  background-color: rgb(238, 243, 166);
+  width: 70%;}
+.filler-color6 {
+  background-image: url("../img/Argentina-Flag.png");
+  width: 100%;
+  background-size:contain ;}
+.filler-color5 {
+  background-image: url("../img/Italian-flag.png");
+  width: 65%;
+  background-size: contain;}
+.filler-color4 {
+  background-image: url("../img/USA-flag.png");
+  width: 95%;
+  background-size: contain;}
+.filler-color6 p {
+    padding-bottom: 40px;
+    color: yellow;}
+.CV-lado-B__footer {
+  background-color: rgb(43, 42, 42);
+  text-align: left;
+  padding: 20px;
+  border-top: solid 2px rgb(81, 81, 81);
+  border-bottom: solid 20px #4d7dc9;
+  height: 100%;}
+.CV-lado-B__footer-text {
+  padding-left: 110px;}
+/* Contact - Gallery */
+.Contact-Gallery__container {
+  position: relative;
+  display: flex;}
+/* Gallery */
+.Gallery__container {
+  width: 50%;}
+.Gallery__grid-container {
+  text-align: center;
+  display: grid;
+  padding: 10px;
+  background-image: url("https://cdn.pixabay.com/photo/2012/08/27/14/19/mountains-55067__340.png");
+  grid-template-columns: repeat(auto-fit, minmax(1fr,1fr));
+  grid-auto-rows: 100px;
+  min-height: 430px;}
+.Gallery__grid-container img {
+  width: 100%;
+  height: 100%;
+  padding: 10px}
+.Gallery-grid-img1 {
+  grid-column: 1 / 5;}
+.Gallery-grid-img2 {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;}
+.Gallery-grid-img3 {
+  grid-column: 3 / 5;}
+.Gallery-grid-img4, .Gallery-grid-img5 {
+  grid-row: 3 / 5;}
+.Gallery-grid-img6 {
+  grid-column: 1 / 3;}
+.Gallery__grid-container img:hover {
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.29);
+  transition: 0.5s;}
+/* Contact  -->  onclick en el boton */
+.Contact__container {
+  background-color: whitesmoke;
+  position: relative;
+  width: 50%;}
+.Contact__form-box {
+  background-color: #cfcfcf ;
+  padding: 50px;
+  text-align: center;
+  min-height: 386px;
+  margin: 22px;}
+.Contact__form-input {
+  border: none;
+  border-bottom: 1.5px solid grey;
+  width: 90%;
+  background-color: #cfcfcf;
+  text-align: center;
+  margin-bottom: 5%;}
+.Contact__form-button {
+  width: 70%;
+  height: 25px;
+  border: none;
+  border-radius: 6px;
+  background-color: grey;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 15px;}
+.Contact__form-input-ta {
+    border: none;
+    border-bottom: 1.5px solid grey;
+    width: 90%;
+    background-color: #cfcfcf;
+    text-align: center;
+    margin-bottom: 5%;
+    resize: none;
+    min-height: 60px ;}
+.Contact__form-input-ta::placeholder {
+  padding-top: 30px;}
+  /* --------------------- */
+ .Contact__form-input:hover, .Contact__form-input-ta:hover{
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 100%;
+  padding: 4px;
+  transition: 0.5s;}
+.Contact__form-input:focus, .Contact__form-input-ta:focus{
+  border-bottom: 2px solid rgb(255, 255, 255);
+  width: 100%;
+  padding: 8px;
+  background: linear-gradient(to Bottom, #cfcfcf, white);
+  outline: none;}
+.Contact__form-input:focus::placeholder, .Contact__form-input-ta:focus::placeholder {
+  visibility: hidden;}
+.Contact__form-button:hover {
+  background-color: #959494;
+  padding: 4px;
+  width: 75%;
+  height: 27px;
+  transition: 0.3s;}
+  /* footer */
+.footer__container {
+  background-color: #4d7dc9;
+  height: 50px;
+  position: flex;}
+.footer__logo img{
+  float: left;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 9px;}
+.footer__social-media {
+  margin-right: 8px;
+  margin-top: 15px;
+  float: right;
+align-items: center;}
+.footer__social-media i{
+  padding: 3px;
+  font-size: 17px;
+  color: black;}
+
+/* MOVIL/TABLET */
+@media only screen and (max-width: 768px){ 
+/* header responsive */
+.header__container-desktop {
+  display: none;}
+.header__container-responsive {
+  text-align: center;
+  position: fixed;
+  visibility: visible;
+  background-color: black;
+  height: 35px;
+  top: 0;
+  padding-top: 9px;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)}
+.header__container-responsive a {
+  text-decoration: none;
+  color: white;}
+.list-responsive {
+  position:relative;
+  margin-top: 8px;
+  display: none;
+  width: 100%;} 
+.item-responsive { 
+  background: rgb(35, 35, 35); 
+  display: block;
+  padding: 3px;}
+.header__button-responsive:hover {
+  color: #ababab;}
+.list-responsive-container:hover .list-responsive {
+  display: block;
+  z-index: 1000;}
+.item-r1:hover {
+  background-color: #c7c7c7;
+  color: white;}
+.item-r2:hover {
+  background-color: #fff6ebf1;
+  color: black;}
+.item-r3:hover {
+  background: #464646;
+  color: rgb(235, 124, 193);}
+.item-r4:hover {
+  background-color: #cfcfcf;
+  color: gray;}
+.item-r5:hover {
+  background-image: url("https://media.istockphoto.com/id/1244372877/es/foto/monta%C3%B1a-glacial-lago-garibaldi-con-agua-turquesa-en-medio-de-bosque-de-con%C3%ADferas-al-atardecer.jpg?s=612x612&w=0&k=20&c=_N4n8jlcvFfPPwYWTozclM7bDuZ0PE8ihtzmAMPU0-w=");}
+.about__container {   
+  margin-top: 20px;}
+.about__text p {
+  text-align:justify}
+/* CV lado A responsive */
+.CV__container {
+  flex-direction: column;}
+.CV-lado-A__container {
+  width: 100%;}
+.CV-lado-A__image {
+  top: -0.5%;
+  right: 1%;}
+.CV-lado-A__image2 {
+  top: -1.2%;
+  right: 0.2%;}
+/* CV lado B responsive */
+.CV-lado-B__container {
+  width: 100%;}
+/* Contact and Gallery responsive*/
+.Contact-Gallery__container {
+  flex-direction: column;}
+.Gallery__container {
+  width: 100%;}
+.Contact__container {
+  width: 100%;}}
